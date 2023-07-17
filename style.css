@@ -45,8 +45,8 @@ a {
     position: absolute;
     text-align: center;
     top: auto;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 150%;
     z-index: -1;
 }
 
