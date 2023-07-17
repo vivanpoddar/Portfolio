@@ -1,0 +1,86 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10vh;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.title {    
+    font-size: 3em !important;
+    margin-bottom: 1%;
+    animation-name: slide-right;
+    animation-duration: 1s;
+}
+
+#background-div {
+    width: auto;
+    height: auto;
+    margin: 3% 3%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-style: double;
+    border-color: black;
+    border-width: 1em;
+}
+
+#background-div video {
+    position: absolute;
+    text-align: center;
+    top: auto;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+/* navbar */
+
+.navbar {
+    display:flex;
+    flex-direction: column;
+    z-index: 1;
+    margin: 5% 5%;
+    animation-name: slide-right;
+    animation-duration: 1s;
+}
+
+.nav-element {
+    font-size: 2em;
+    margin-top: 0.5%;
+    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.nav-element:hover {
+    color: rgb(142, 165, 255);
+    font-size: 2.2em;
+    margin-top: 0.5%;   
+}
+
+.project-div {
+    display:flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#project-button:hover ~ .project-div {
+    opacity: 1;
+}
