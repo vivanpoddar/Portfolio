@@ -1,5 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-
 * {
     margin: 0;
     padding: 0;
@@ -67,7 +65,7 @@ a {
     font-size: 2em;
     margin-top: 0.5%;
     transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
-    list-style: url("caret-right.svg");
+    list-style: url("https://github.com/vivanpoddar/Portfolio/raw/main/caret-right.svg");
 }
 
 .nav-element:hover {
@@ -76,17 +74,5 @@ a {
     margin-top: 0.5%;   
 }
 
-.project-div {
-    display:flex;
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
 
-.list-element {
-    font-size: 0.75em;
-}
 
-#project-button:hover ~ .project-div, .list-element:hover ~ .project-div {
-    opacity: 1;
-}
